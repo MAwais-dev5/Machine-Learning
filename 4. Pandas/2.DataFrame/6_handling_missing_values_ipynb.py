@@ -68,3 +68,19 @@ df
 
 df = pd.read_csv('/content/drive/MyDrive/datasets/bbc.csv',keep_default_na=False)
 df
+
+"""#If we make the keep_default_na = true
+then it will show below result
+"""
+
+df = pd.read_csv('/content/drive/MyDrive/datasets/bbc.csv',keep_default_na=True)
+df
+
+"""It consider all other as NaN excluding the n values and not avaible just put both of them similar
+
+#Now If we want the no any value will be missing in our data set so we use na_filter which increase its performance
+"""
+
+df = pd.read_csv('/content/drive/MyDrive/datasets/bbc.csv',na_filter=False)
+df
+
