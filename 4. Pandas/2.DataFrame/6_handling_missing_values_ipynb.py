@@ -39,3 +39,32 @@ df
 
 df = pd.read_csv('/content/drive/MyDrive/datasets/bbc.csv',na_values='not available')
 df
+
+"""I put the missing value in dataset as the no values"""
+
+df = pd.read_csv('/content/drive/MyDrive/datasets/bbc.csv',na_values='not available')
+df
+
+"""Its result is no values so we consider it as NaN so we use the list for considering multiple values as NaN"""
+
+df = pd.read_csv('/content/drive/MyDrive/datasets/bbc.csv',na_values=['not available','no values '])
+df
+
+"""# If we want to it does not show the Null all the below Parameterw
+#All These Strings Are Considered as Default NaN Values by Pandas
+
+#N/A        -NaN        null
+#N/A N/A    -nan        n/a
+#NA         N/A         nan
+-1.#IND     NA          1.#IND
+-1.#QNAN    NULL        1.#QNAN
+
+
+
+
+**SO we use the keep_default_na      Parameter** then print it
+
+"""
+
+df = pd.read_csv('/content/drive/MyDrive/datasets/bbc.csv',keep_default_na=False)
+df
