@@ -52,5 +52,25 @@ df
 
 df.notnull()
 
-"""It works ViceVersa of the isnull () it gives true while all data represents in cells and give the false when data is missing"""
+"""It works ViceVersa of the isnull () it gives true while all data represents in cells and give the false when data is missing
+
+#Sum () use with the notnull()
+"""
+
+df.notnull().sum()
+
+"""#sum all the values which present in each column"""
+
+df.notnull().sum().sum()
+
+"""#Make Series"""
+
+import numpy as np
+
+sr=pd.Series ([1,2,3,np.nan,4])
+sr
+
+"""#Now again some them by using isnull()"""
+
+sr.isnull().sum()
 
