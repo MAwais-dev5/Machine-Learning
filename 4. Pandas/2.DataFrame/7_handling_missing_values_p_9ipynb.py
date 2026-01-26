@@ -48,3 +48,9 @@ df.isnull().sum().sum()
 df = pd.read_csv('/content/drive/MyDrive/datasets/tweet_emotions.csv')
 df
 
+"""#Now use the notnull() function  """
+
+df.notnull()
+
+"""It works ViceVersa of the isnull () it gives true while all data represents in cells and give the false when data is missing"""
+
