@@ -23,3 +23,28 @@ import pandas as pd
 
 df = pd.read_csv('/content/drive/MyDrive/datasets/tweet_emotions.csv')
 df
+
+"""#Now call the isnull values"""
+
+df.isnull()
+
+"""It gives false because no any value is null inside the data set
+Now it gives the true some missing values inside the dataset
+
+"""
+
+df.isnull()
+
+"""use sum () with isnull () that will some the all values which are present in any of the column"""
+
+df.isnull().sum()
+
+"""Now sum all the missing values sum
+Like
+"""
+
+df.isnull().sum().sum()
+
+df = pd.read_csv('/content/drive/MyDrive/datasets/tweet_emotions.csv')
+df
+
