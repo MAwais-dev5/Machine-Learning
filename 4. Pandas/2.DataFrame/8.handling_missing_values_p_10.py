@@ -63,3 +63,26 @@ df.dropna(how='all', axis=1)
 
 df.dropna(how='all', axis=0)
 
+"""# in dataset row 3 is empty I mean contains on all NaN values
+# Now cal it
+"""
+
+import pandas as pd
+
+df = pd.read_csv('/content/drive/MyDrive/datasets/tweet_emotions.csv')
+df
+
+"""#NOw call the dropna( how ='all')"""
+
+df.dropna(how='all')
+
+"""# it remove the row 3 because it contains the NaN values
+# If we have need to print those values which has at least one NaN value if al values are NaN then it will remove that row and columns
+"""
+
+df.dropna(thresh=1)
+
+"""# print those values if it has atleast 4 null values"""
+
+df.dropna(thresh=4)
+
