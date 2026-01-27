@@ -19,20 +19,31 @@ import pandas as pd
 df = pd.read_csv('/content/drive/MyDrive/datasets/tweet_emotions.csv')
 df
 
-"""NaN shown at Where's Missing Values
-# dropna() method Syntax is df.dropna() and it creates new dataframe which has not NaN Values
-#dropna remove missing Values
+"""# NaN represents missing values in the dataset.
+# The dropna() method (df.dropna()) removes missing values.
+# It returns a new DataFrame without NaN values.
 
 """
 
 df.dropna()
 
-"""# In dropna () axis parameter used which has 0 & 1 input values
-# 0 means row and 1 mean column
-# By default values is 0: it removes bydefault that row which has NaN values
+"""# In dropna(), the 'axis' parameter specifies rows or columns.
+# axis=0 refers to rows, and axis=1 refers to columns.
+# By default, axis=0 is used, so rows containing NaN values are removed.
 
 # Now call as axis =1
 """
 
 df.dropna(axis=1)
+
+"""# In dropna(), the parameter after axis is 'how'.
+# The 'how' parameter accepts two string values: 'any' and 'all'.
+# 'any' drops rows or columns if at least one value is NaN.
+# 'all' drops rows or columns only if all values are NaN.
+
+"""
+
+df.dropna(how='any')
+
+df.dropna(how='all')
 
