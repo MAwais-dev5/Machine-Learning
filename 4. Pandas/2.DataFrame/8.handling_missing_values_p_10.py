@@ -55,3 +55,11 @@ df.dropna(how='any', axis=1)
 
 df.dropna(how='any', axis=0)
 
+"""#Apply on colum how 'all'"""
+
+df.dropna(how='all', axis=1)
+
+"""#apply on row how all"""
+
+df.dropna(how='all', axis=0)
+
