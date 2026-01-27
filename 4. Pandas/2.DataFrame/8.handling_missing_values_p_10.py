@@ -47,3 +47,11 @@ df.dropna(how='any')
 
 df.dropna(how='all')
 
+"""# apply how any on column"""
+
+df.dropna(how='any', axis=1)
+
+"""#apply on row dropna(how 'any')"""
+
+df.dropna(how='any', axis=0)
+
