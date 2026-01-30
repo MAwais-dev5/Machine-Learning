@@ -88,3 +88,13 @@ df.fillna(0,limit=2)
 # Now using method
 df.fillna(method='ffill',limit=2)
 
+"""#Now using the inplace which gives boolean result True or False
+df.fillna(5, inplace=True) it replace 5 value where's the missing values present
+"""
+
+df.fillna(5,inplace=True)
+df
+
+df.fillna(6, inplace=False)
+df
+
