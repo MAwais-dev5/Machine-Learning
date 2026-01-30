@@ -77,3 +77,14 @@ df.fillna(method='ffill',axis=0)
 df.fillna(method='ffill',axis=1)
 #
 
+"""#Now we use the limit and it will be used when you have to fill the specific NaN values like 3 or 4 or 5
+
+Syntax:
+df.fillna(row, limit=values)
+"""
+
+df.fillna(0,limit=2)
+
+# Now using method
+df.fillna(method='ffill',limit=2)
+
