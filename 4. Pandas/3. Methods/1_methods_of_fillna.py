@@ -54,3 +54,9 @@ It will also fill the previous value
 
 df.fillna(method='pad')
 
+"""#Now we fill the backward values by using the method bfill
+
+"""
+
+df.fillna(method='bfill')
+
