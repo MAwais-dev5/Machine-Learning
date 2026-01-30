@@ -41,3 +41,16 @@ df.fillna(2)
 
 df.fillna({'Tweet':'none', 'Label':'joy', 'value':0})
 
+"""#Now forward values fill by using method ffill
+Means it fill the previous values inside the dataset
+"""
+
+df.fillna(method='ffill')
+
+"""#We can use pad in place of ffill
+It will also fill the previous value
+
+"""
+
+df.fillna(method='pad')
+
