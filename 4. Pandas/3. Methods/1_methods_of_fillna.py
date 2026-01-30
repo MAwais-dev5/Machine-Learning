@@ -37,3 +37,7 @@ df.fillna(0)
 
 df.fillna(2)
 
+"""#Now, substitute t NaN values with appropriate replacement  differen values through the Dictionar"""
+
+df.fillna({'Tweet':'none', 'Label':'joy', 'value':0})
+
