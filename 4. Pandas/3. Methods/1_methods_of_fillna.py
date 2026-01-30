@@ -60,3 +60,20 @@ df.fillna(method='pad')
 
 df.fillna(method='bfill')
 
+"""#Now using method axis on index 0 means row index 1 means column
+With it we have to specify the values or method otherwise it gives an error
+"""
+
+df.fillna(method='bfill',axis=0)
+#it is for the backward row
+
+#backward column
+df.fillna(method='bfill',axis=1)
+
+#forward row
+df.fillna(method='ffill',axis=0)
+
+#forward column
+df.fillna(method='ffill',axis=1)
+#
+
