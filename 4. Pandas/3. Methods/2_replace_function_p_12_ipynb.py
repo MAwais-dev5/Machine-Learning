@@ -82,3 +82,13 @@ df.replace('[A-Za-z]',0, regex= True)
 
 df.replace ({'Names':'[A-Za-z]'}, 'Awais', regex = True)
 
+"""# Now we use the Forward Fill method which replace the specific string with previous value
+
+"""
+
+df.replace('No', method='ffill')   #it will replace No with previous values Yes
+
+"""# Now backward fill method used and replace it with the after that values"""
+
+df.replace ('yes', method='bfill')
+
