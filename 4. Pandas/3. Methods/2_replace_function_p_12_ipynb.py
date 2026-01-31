@@ -43,3 +43,21 @@ df.replace(2,12)
 
 df.replace(to_replace=0, value=100)
 
+"""# Now we can change all values of ID column with single value"""
+
+df.replace ([0,1,2,3,4,5,6,7,8,9],0)
+
+"""#Using Parameters"""
+
+df.replace (to_replace =[0,1,2,3,4,5,6,7,8,9], value=0)
+
+"""#We can Also replace with them by using the list by using with parameters
+
+"""
+
+df.replace (to_replace=[0,1,2,3,4,5,6,7,8,9], value=[11,22,33,44,55,66,77,88,99,100])
+
+"""# Through list without using the parameters"""
+
+df.replace ([0,1,2,3,4,5,6,7,8,9],[11,21,31,41,51,61,71,81,91,10])
+
