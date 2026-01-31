@@ -61,3 +61,24 @@ df.replace (to_replace=[0,1,2,3,4,5,6,7,8,9], value=[11,22,33,44,55,66,77,88,99,
 
 df.replace ([0,1,2,3,4,5,6,7,8,9],[11,21,31,41,51,61,71,81,91,10])
 
+"""# If we want to replace the specific column value we use the dictionary
+Syntax:
+df.replace({''column name':'value'}, 'replace with')
+"""
+
+df.replace({'Date':'No'}, 'False')
+
+"""# Now we can replace the patterns through strings with integer value zero"""
+
+df.replace('[A-Za-z]',0)
+
+"""# It looks similar nothing has changed because we have to change the string
+# So we use regex method which takes the boolean values and then replace strings into integera
+"""
+
+df.replace('[A-Za-z]',0, regex= True)
+
+"""# if we want to replace an specific column values so we use the list"""
+
+df.replace ({'Names':'[A-Za-z]'}, 'Awais', regex = True)
+
