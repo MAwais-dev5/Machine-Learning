@@ -92,3 +92,21 @@ df.replace('No', method='ffill')   #it will replace No with previous values Yes
 
 df.replace ('yes', method='bfill')
 
+"""# Now using the limit which can tells how many values would you like to change"""
+
+df.replace(0, method='bfill', limit=1) #id 0 parameter changed with the 1 backward value
+
+df.replace('No', method='bfill', limit=2)
+
+"""# we use inplace in replace NaN values with the other values"""
+
+df.replace (4,100, inplace= True) #ID column 4 value replaced with 100
+df
+
+"""# For Specific Column Value"""
+
+import numpy as np
+
+df['Date'].replace(['NaN', np.nan], 'none', inplace=True)
+df
+
