@@ -35,3 +35,11 @@ df.replace(to_replace='tennis',value='cricket')
 
 df.replace('tennis','vollyball')
 
+"""# Now we can replace the interger values as well like ID numbers without parameters name"""
+
+df.replace(2,12)
+
+"""# Through Parameters name"""
+
+df.replace(to_replace=0, value=100)
+
