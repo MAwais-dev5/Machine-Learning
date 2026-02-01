@@ -34,3 +34,21 @@ df.interpolate() #this fills only numeric values
 
 df.interpolate(method='linear')
 
+#replace the date with time
+df.interpolate(method='time')
+
+#check its type
+type(df.Date[0])
+
+#Change data type
+df=pd.read_csv('/content/drive/MyDrive/datasets/bbc.csv',parse_dates=['Date'])
+df
+
+type(df.Date[0])
+
+#Make date column a index column
+df=pd.read_csv('/content/drive/MyDrive/datasets/bbc.csv',parse_dates=['Date'], index_col=['Date'])
+df
+
+df.interpolate(method='time')
+
