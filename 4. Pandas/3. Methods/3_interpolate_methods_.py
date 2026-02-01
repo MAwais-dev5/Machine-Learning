@@ -52,3 +52,9 @@ df
 
 df.interpolate(method='time')
 
+#Now use method parameter index
+df.interpolate(method='index')
+
+df=pd.read_csv('/content/drive/MyDrive/datasets/bbc.csv',parse_dates=['Date'], index_col=['Profits'])
+df
+
